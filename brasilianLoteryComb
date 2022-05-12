@@ -4,7 +4,7 @@ import sys
 A = [1,2,3,4,8,9,10]                                    # Seletor de 10  Dezenas
 B = [11,15,16,17,18,22,23,24,25]                        # Seletor dezenas 5
 C = [5,6,7,12,13,14,19,20,21]                           # Favoritas
-D = [3,4,5,8,9,10,11,14,15,16,18,19,20,22,25]             # Sorteadas do ultimo concurso
+D = [3,4,5,8,9,10,11,14,15,16,18,19,20,22,25]           # Sorteadas do ultimo concurso (Informar manualmente:https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx)
 
 # imprimindo uma lista sem os colchetes :    print(*Ap1,sep = ",")
 
