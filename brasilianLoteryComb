@@ -1,0 +1,351 @@
+import random
+import sys
+
+A = [1,2,3,4,8,9,10]                                    # Seletor de 10  Dezenas
+B = [11,15,16,17,18,22,23,24,25]                        # Seletor dezenas 5
+C = [5,6,7,12,13,14,19,20,21]                           # Favoritas
+D = [3,4,5,8,9,10,11,14,15,16,18,19,20,22,25]             # Sorteadas do ultimo concurso
+
+# imprimindo uma lista sem os colchetes :    print(*Ap1,sep = ",")
+
+# Combo 1   357
+
+def loto(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 2:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 4:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 6:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo2 366
+
+def loto2(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 2:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 5:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 5:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo3 375
+
+def loto3(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 2:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 6:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 4:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo4 447
+
+def loto4(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 3:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 3:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 6:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo5 456
+
+def loto5(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 3:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 4:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 5:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo6 465
+
+def loto6(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 3:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 5:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 4:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo7 474
+
+def loto7(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 3:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 6:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 3:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo8 546
+
+def loto8(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 4:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 3:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 5:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+
+# Combo9 555
+
+def loto9(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 4:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 4:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 4:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+        # Combo10 564
+
+
+def loto10(Aposta):
+    Aposta = []
+    random.shuffle(A)
+    lista_A = list(A)
+    for indice, valor in enumerate(lista_A):
+        if indice <= 4:
+            Aposta.append(valor)
+    random.shuffle(B)
+    lista_B = list(B)
+    for indice, valor in enumerate(lista_B):
+        if indice <= 5:
+            Aposta.append(valor)
+    Aposta.sort()
+    random.shuffle(C)
+    lista_C = list(C)
+    for indice, valor in enumerate(lista_C):
+        if indice <= 3:
+            Aposta.append(valor)
+    Aposta.sort()
+
+    aposta1 = list(filter(lambda x: x % 2 != 0, Aposta))
+    impar = len(aposta1)
+    aposta2 = list(filter(lambda x: x in D, (Aposta)))
+    repeat = len(aposta2)
+    if impar < 7 or impar > 10:
+        print()
+    elif repeat < 7 or repeat > 10:
+        print()
+    else:
+        print(*Aposta, sep=",")
+
+H=[]
+loto(H)
